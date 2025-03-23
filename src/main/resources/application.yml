@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: javaDemoPopular_bot
+  datasource:
+    url: jdbc:postgresql://127.127.126.49:5432/tg-bot
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  main:
+    allow-bean-definition-overriding: true
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  elasticsearch:
+    uris: http://localhost:9200
+  redis:
+    host: localhost
+    port: 6379
+  cache:
+    type: redis
+    redis:
+      time-to-live: 3600000
+  #    username: elastic
+  #    password: 2vM=j-_1NOD287bQXJBo
